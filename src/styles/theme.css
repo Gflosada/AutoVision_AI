@@ -1,0 +1,303 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+
+  /* AutoVision AI Premium Automotive Theme */
+  --background: #0a0a0f;
+  --foreground: #e8e9ed;
+  --card: #151520;
+  --card-foreground: #e8e9ed;
+  --popover: #1a1a28;
+  --popover-foreground: #e8e9ed;
+  --primary: #00d4ff;
+  --primary-foreground: #0a0a0f;
+  --secondary: #2a2a3e;
+  --secondary-foreground: #e8e9ed;
+  --muted: #1f1f2e;
+  --muted-foreground: #8a8a9e;
+  --accent: #00d4ff;
+  --accent-foreground: #0a0a0f;
+  --destructive: #ff3366;
+  --destructive-foreground: #ffffff;
+  --border: rgba(255, 255, 255, 0.08);
+  --input: transparent;
+  --input-background: rgba(255, 255, 255, 0.03);
+  --switch-background: #2a2a3e;
+  --font-weight-medium: 600;
+  --font-weight-normal: 400;
+  --ring: #00d4ff;
+
+  /* Automotive specific colors */
+  --neon-cyan: #00d4ff;
+  --electric-blue: #0099ff;
+  --purple-glow: #a855f7;
+  --chrome: #c0c5ce;
+  --metallic-gray: #3a3a4e;
+  --charcoal: #1a1a28;
+  --deep-black: #0a0a0f;
+
+  /* Chart colors */
+  --chart-1: #00d4ff;
+  --chart-2: #0099ff;
+  --chart-3: #a855f7;
+  --chart-4: #ff3366;
+  --chart-5: #00ff88;
+
+  --radius: 0.75rem;
+
+  /* Sidebar colors */
+  --sidebar: #0f0f18;
+  --sidebar-foreground: #e8e9ed;
+  --sidebar-primary: #00d4ff;
+  --sidebar-primary-foreground: #0a0a0f;
+  --sidebar-accent: #1a1a28;
+  --sidebar-accent-foreground: #e8e9ed;
+  --sidebar-border: rgba(255, 255, 255, 0.06);
+  --sidebar-ring: #00d4ff;
+}
+
+.dark {
+  /* Dark mode inherits the same automotive theme (app is primarily dark) */
+  --background: #0a0a0f;
+  --foreground: #e8e9ed;
+  --card: #151520;
+  --card-foreground: #e8e9ed;
+  --popover: #1a1a28;
+  --popover-foreground: #e8e9ed;
+  --primary: #00d4ff;
+  --primary-foreground: #0a0a0f;
+  --secondary: #2a2a3e;
+  --secondary-foreground: #e8e9ed;
+  --muted: #1f1f2e;
+  --muted-foreground: #8a8a9e;
+  --accent: #00d4ff;
+  --accent-foreground: #0a0a0f;
+  --destructive: #ff3366;
+  --destructive-foreground: #ffffff;
+  --border: rgba(255, 255, 255, 0.08);
+  --input: rgba(255, 255, 255, 0.03);
+  --ring: #00d4ff;
+  --font-weight-medium: 600;
+  --font-weight-normal: 400;
+  --chart-1: #00d4ff;
+  --chart-2: #0099ff;
+  --chart-3: #a855f7;
+  --chart-4: #ff3366;
+  --chart-5: #00ff88;
+  --sidebar: #0f0f18;
+  --sidebar-foreground: #e8e9ed;
+  --sidebar-primary: #00d4ff;
+  --sidebar-primary-foreground: #0a0a0f;
+  --sidebar-accent: #1a1a28;
+  --sidebar-accent-foreground: #e8e9ed;
+  --sidebar-border: rgba(255, 255, 255, 0.06);
+  --sidebar-ring: #00d4ff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Automotive custom colors */
+  --color-neon-cyan: var(--neon-cyan);
+  --color-electric-blue: var(--electric-blue);
+  --color-purple-glow: var(--purple-glow);
+  --color-chrome: var(--chrome);
+  --color-metallic-gray: var(--metallic-gray);
+  --color-charcoal: var(--charcoal);
+  --color-deep-black: var(--deep-black);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /**
+  * Default typography styles for HTML elements (h1-h4, p, label, button, input).
+  * These are in @layer base, so Tailwind utility classes (like text-sm, text-lg) automatically override them.
+  */
+
+  html {
+    font-size: var(--font-size);
+  }
+
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h4 {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  label {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  button {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  input {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+
+  select {
+    color-scheme: dark;
+  }
+
+  select option {
+    background: #151520;
+    color: #f4f7fb;
+  }
+
+  select option:checked {
+    background: #00d4ff;
+    color: #0a0a0f;
+  }
+
+  /* AutoVision AI Custom Utilities */
+  .glass-panel {
+    background: rgba(21, 21, 32, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .neon-glow {
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3), 0 0 40px rgba(0, 212, 255, 0.15);
+  }
+
+  .chrome-text {
+    background: linear-gradient(135deg, #c0c5ce 0%, #ffffff 50%, #c0c5ce 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .scan-line {
+    animation: scan 2s ease-in-out infinite;
+  }
+
+  @keyframes scan {
+    0%, 100% { transform: translateY(-100%); opacity: 0; }
+    50% { opacity: 0.3; }
+  }
+
+  .gradient-border {
+    position: relative;
+  }
+
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, #00d4ff, #a855f7);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+}
+
+@layer components {
+  .app-select {
+    appearance: none;
+    width: 100%;
+    min-height: 3rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(0, 212, 255, 0.58);
+    background-color: rgba(21, 21, 32, 0.96);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23e8e9ed' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.25rem;
+    color: #f4f7fb;
+    font-size: var(--text-base);
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 0.75rem 3rem 0.75rem 1rem;
+    outline: none;
+    transition: border-color 150ms ease, box-shadow 150ms ease, background-color 150ms ease;
+  }
+
+  .app-select:hover {
+    border-color: rgba(0, 212, 255, 0.82);
+    background-color: rgba(26, 26, 40, 0.98);
+  }
+
+  .app-select:focus,
+  .app-select:focus-visible {
+    border-color: #00d4ff;
+    box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.18);
+  }
+
+  .app-select:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+  }
+}
