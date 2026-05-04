@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router";
 import { Sparkles, Palette, Wrench, Layers, Zap, Shield } from "lucide-react";
+import { BrandLogo } from "../components/BrandLogo";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 export function Landing() {
@@ -50,7 +51,7 @@ export function Landing() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-border">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <h1 className="chrome-text">AutoVision AI</h1>
+          <BrandLogo className="w-36 sm:w-44" />
           <div className="flex items-center gap-4">
             <button
               onClick={() => navigate("/login")}
@@ -73,7 +74,7 @@ export function Landing() {
         {/* Background effects */}
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent pointer-events-none" />
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-purple-glow/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -146,7 +147,7 @@ export function Landing() {
                 </p>
                 <div className="flex gap-2 mt-3">
                   <span className="px-2 py-1 bg-primary/20 text-primary rounded text-xs">Custom Wrap</span>
-                  <span className="px-2 py-1 bg-purple-glow/20 text-purple-glow rounded text-xs">Matte</span>
+                  <span className="px-2 py-1 bg-primary/15 text-primary rounded text-xs">Matte</span>
                 </div>
               </div>
             </div>
@@ -233,7 +234,7 @@ export function Landing() {
                   <p className="text-muted-foreground">{step.description}</p>
                 </div>
                 {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-primary to-purple-glow" />
+                  <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-primary to-[#0d6f3b]" />
                 )}
               </div>
             ))}
@@ -366,7 +367,7 @@ export function Landing() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h3 className="chrome-text mb-4">AutoVision AI</h3>
+              <BrandLogo className="w-44 mb-4" />
               <p className="text-sm text-muted-foreground">
                 AI-powered vehicle customization platform
               </p>
@@ -399,7 +400,7 @@ export function Landing() {
             </div>
           </div>
           <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
-            <p>&copy; 2026 AutoVision AI. All rights reserved.</p>
+            <p>&copy; 2026 Ecophant Auto. All rights reserved.</p>
           </div>
         </div>
       </footer>

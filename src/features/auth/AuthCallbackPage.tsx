@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import { toast } from "sonner";
+import { BrandLogo } from "../../app/components/BrandLogo";
 import { getSupabaseClient } from "../../lib/supabase/client";
 import { useAuthStore } from "./auth.store";
 
@@ -55,7 +56,7 @@ export function AuthCallbackPage() {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-6">
       <div className="glass-panel rounded-2xl p-8 max-w-md text-center">
-        <h1 className="text-2xl mb-3">AutoVision AI</h1>
+        <BrandLogo className="w-52 mx-auto mb-4" />
         <p className="text-muted-foreground">{message}</p>
       </div>
     </div>

@@ -93,7 +93,7 @@ export function Results() {
           >
             <ImageWithFallback src={generated} alt="Generated vehicle design" className="absolute inset-0 w-full h-full object-cover" />
             {generation.generatedImageUrl === generation.originalImageUrl && (
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/25 via-transparent to-purple-glow/20 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/25 via-transparent to-primary/10 pointer-events-none" />
             )}
             <div className="absolute top-4 right-4 px-4 py-2 bg-primary text-primary-foreground rounded-full text-sm">After AI</div>
             <div className="absolute inset-0 overflow-hidden" style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}>

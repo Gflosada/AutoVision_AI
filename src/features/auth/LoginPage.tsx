@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from "react-router";
 import { toast } from "sonner";
 import { z } from "zod";
 import { appConfig } from "../../lib/env";
+import { BrandLogo } from "../../app/components/BrandLogo";
 import { useAuthStore } from "./auth.store";
 
 const loginSchema = z.object({
@@ -38,7 +39,7 @@ export function LoginPage() {
   return (
     <div className="min-h-screen bg-background grid lg:grid-cols-2">
       <section className="hidden lg:flex flex-col justify-between p-10 bg-charcoal">
-        <Link to="/" className="chrome-text text-2xl">AutoVision AI</Link>
+        <BrandLogo className="w-48" />
         <div className="space-y-6 max-w-xl">
           <div className="w-14 h-14 rounded-xl bg-primary/15 flex items-center justify-center">
             <Sparkles className="w-7 h-7 text-primary" />

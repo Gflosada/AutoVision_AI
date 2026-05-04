@@ -94,7 +94,7 @@ export function AILoading() {
             <span className="text-primary">{progress}%</span>
           </div>
           <div className="h-3 bg-muted rounded-full overflow-hidden">
-            <div className="h-full bg-gradient-to-r from-primary to-purple-glow transition-all" style={{ width: `${progress}%` }} />
+            <div className="h-full bg-gradient-to-r from-primary to-[#0d6f3b] transition-all" style={{ width: `${progress}%` }} />
           </div>
           <div className="space-y-4">
             {progressSteps.map((step, index) => (

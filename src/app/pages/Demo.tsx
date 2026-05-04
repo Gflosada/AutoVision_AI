@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router";
 import { Sparkles } from "lucide-react";
 import { mockGallery } from "../../data/mockGallery";
+import { BrandLogo } from "../components/BrandLogo";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 export function Demo() {
@@ -12,7 +13,8 @@ export function Demo() {
       <div className="max-w-6xl mx-auto py-16 space-y-10">
         <div className="text-center space-y-4">
           <Sparkles className="w-10 h-10 text-primary mx-auto" />
-          <h1 className="text-5xl">AutoVision AI demo</h1>
+          <BrandLogo className="w-64 mx-auto" />
+          <h1 className="text-5xl">AI vehicle studio demo</h1>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Explore the mock AI vehicle customization flow. The production backend can later replace this local demo mode.
           </p>

@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router";
 import { toast } from "sonner";
 import { z } from "zod";
+import { BrandLogo } from "../../app/components/BrandLogo";
 import { useAuthStore } from "./auth.store";
 
 const signupSchema = z.object({
@@ -42,7 +43,7 @@ export function SignupPage() {
     <div className="min-h-screen bg-background flex items-center justify-center p-6">
       <form onSubmit={form.handleSubmit(onSubmit)} className="w-full max-w-md glass-panel rounded-2xl p-8 space-y-6">
         <div>
-          <Link to="/" className="chrome-text text-2xl">AutoVision AI</Link>
+          <BrandLogo className="w-48" />
           <h1 className="text-3xl mt-8 mb-2">Create your studio</h1>
           <p className="text-muted-foreground">Start generating vehicle customization concepts.</p>
         </div>

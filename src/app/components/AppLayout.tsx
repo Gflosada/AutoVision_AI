@@ -3,6 +3,7 @@ import { LayoutDashboard, Plus, Car, Images, CreditCard, Store, Settings, LogOut
 import { toast } from "sonner";
 import { useAuthStore } from "../../features/auth/auth.store";
 import { useUsageStore } from "../../store/usage.store";
+import { BrandLogo } from "./BrandLogo";
 
 export function AppLayout() {
   const { user, logout, isMockAuth } = useAuthStore();
@@ -35,8 +36,8 @@ export function AppLayout() {
     <div className="flex h-screen bg-background overflow-hidden">
       <aside className="hidden md:flex w-64 bg-sidebar border-r border-sidebar-border flex-col">
         <div className="p-6 border-b border-sidebar-border">
-          <h1 className="chrome-text tracking-tight">AutoVision AI</h1>
-          <p className="text-xs text-muted-foreground mt-1">AI Vehicle Design Studio</p>
+          <BrandLogo className="w-44" imageClassName="drop-shadow-[0_0_14px_rgba(151,205,74,0.24)]" />
+          <p className="text-xs text-muted-foreground mt-3">AI Vehicle Design Studio</p>
         </div>
 
         <nav className="flex-1 p-4 space-y-1">
@@ -61,7 +62,7 @@ export function AppLayout() {
 
         <div className="p-4 border-t border-sidebar-border space-y-3">
           <div className="flex items-center gap-3 px-4 py-3 glass-panel rounded-lg">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-purple-glow flex items-center justify-center">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-[#0d6f3b] flex items-center justify-center">
               <span>{user?.fullName?.charAt(0) ?? "U"}</span>
             </div>
             <div className="flex-1 min-w-0">
